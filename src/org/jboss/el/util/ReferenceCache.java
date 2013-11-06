@@ -193,7 +193,7 @@ public abstract class ReferenceCache<K,V> {
     }
     
     
-    public void startMonitor() {
+    public void startMonitor() {	
         if (queueMonitor == null) {
             queueMonitor = new Thread(this.queue);
             queueMonitor.setName("jboss EL reference queue cleanup thread");
